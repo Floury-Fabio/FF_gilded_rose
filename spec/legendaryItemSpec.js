@@ -4,7 +4,7 @@ describe("LegendaryItem", function () {
 
   it("The legendaryItem haven't sellIn", function (){
     
-    let legendaryItem = new LegendaryItem("sulfu", 20)
+    let legendaryItem = new LegendaryItem("sulfu")
 
     expect(legendaryItem.sellIn).not.toBeDefined()
   })
@@ -13,11 +13,11 @@ describe("LegendaryItem", function () {
 
     it("The quality of legendaryItem doesn't decrease", function (){
 
-      let legendaryItem = new LegendaryItem("sulfu", 20)
+      let legendaryItem = new LegendaryItem("sulfu")
 
       legendaryItem.updateQuality()
 
-      expect(legendaryItem.quality).toBe(20)
+      expect(legendaryItem.quality).toBe(80)
     })
 
   })

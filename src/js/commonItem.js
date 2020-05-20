@@ -10,11 +10,12 @@ class CommonItem extends Item {
     if (this.sellIn <= 0)
       this.quality--
 
-    this.sellIn--
     this.quality--
 
     if (this.quality < 0)
       this.quality = 0
+
+    this.sellIn--
   }
 }
 
